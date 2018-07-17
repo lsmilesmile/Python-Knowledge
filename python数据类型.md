@@ -556,36 +556,127 @@ a
   5. 代码示例
 
      ```Python
+     >>> s = "hello,my name is felix,and you"
      
+     
+     >>> s.split()
+     ['hello,my', 'name', 'is', 'felix,and', 'you']
+     
+     >>> s.split('m', 1)
+     ['hello,', 'y name is felix,and you']
+     
+     >>> s.split('m')
+     ['hello,', 'y na', 'e is felix,and you']
+     
+     >>> s.split('k')
+     ['hello,my name is felix,and you']
      ```
 
 - **rsplit()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：通过指定分隔符对字符串进行分割并返回一个列表，默认分隔符为所有空字符，包括空格、换行(\n)、制表符(\t)等。类似于split()方法，只不过是从字符串最后面开始分割。 
+
+  2. 语法：**s.rsplit(【sep=None】【,count=s.count(sep)】)**
+
+  3. 参数：
+
+     - sep - 可选参数，指定的分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等
+     - count - 可选参数，分割次数，默认为分隔符在字符串中出现的总次数
+
+  4. 返回值：返回分割后的字符串列表
+
   5. 代码示例
+
+     ```Python
+     >>> s = "hello,my name is felix,and you"
+     
+     
+     >>> s.rsplit()
+     ['hello,my', 'name', 'is', 'felix,and', 'you']
+     
+     >>> s.rsplit('y')
+     ['hello,m', ' name is felix,and ', 'ou']
+     
+     >>> s.rsplit('y', 1)
+     ['hello,my name is felix,and ', 'ou']
+     
+     >>> s.rsplit('k')
+     ['hello,my name is felix,and you']
+     ```
 
 - **partition()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：用来根据指定的分隔符将字符串进行分割。如果字符串包含指定的分隔符，则返回一个3元的元组，第一个为分隔符前面的子字符串，第二个为分隔符本身，第三个为分隔符后面的子字符串。partition() 方法是在Python 2.5中新增的。
+
+  2. 语法：**s.partition(sep)**
+
+  3. 参数：
+
+     - sep - 指定的分隔符
+
+  4. 返回值：返回一个3元的元组，第一个为分隔符前面的子字符串，第二个为分隔符本身，第三个为分隔符后面的子字符串。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = "http://www.w3cschool.cc/"
+     
+     
+     >>> s.partition('//')
+     ('http:', '//', 'www.w3cschool.cc/')
+     
+     #指定的分割字符不存在
+     >>> s.partition('k')
+     ('http://www.w3cschool.cc/', '', '')
+     ```
 
 - **rpartiton()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：用来根据指定的分隔符将字符串进行分割。如果字符串包含指定的分隔符，则返回一个3元的元组，第一个为分隔符前面的子字符串，第二个为分隔符本身，第三个为分隔符后面的子字符串。只不过从字符串最后开始分割。
+
+  2. 语法：**s.rpartition(sep)**
+
+  3. 参数：
+
+     - sep - 指定的分隔符
+
+  4. 返回值：返回一个3元的元组，第一个为分隔符前面的子字符串，第二个为分隔符本身，第三个为分隔符后面的子字符串。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = "http://www.w3cschool.cc/"
+     
+     >>> s.rpartition('w')
+     ('http://www.', 'w', '3cschool.cc/')
+     
+     >>> s.partition('w')
+     ('http://', 'w', 'ww.w3cschool.cc/')
+     ```
 
 - **join()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：用于将可迭代对象中的元素以指定的字符连接生成一个新的字符串。 
+
+  2. 语法：**s.join(iterable)**
+
+  3. 参数：
+
+     - iterable -- 可迭代对象（字符串、列表、元祖、字典）。 
+
+  4. 返回值：返回通过指定字符连接可迭代对象中的元素后生成的新**字符串**。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> iter_temp = ['h', 'e', 'l', 'l', 'o']
+     >>> s1 = ''
+     >>> s2 = '_'
+     
+     >>> s1.join(iter_temp)
+     'hello'
+     
+     >>> s2.join(iter_temp)
+     'h_e_l_l_o'
+     ```
+
+     
 
 - **lower()**
   1. 描述
@@ -1261,5 +1352,88 @@ Python常用类型转换：
 >>> adict['a']
 1
 >>> 
+```
+
+#### 2.3.2字典操作函数
+
+<center>**表7 字典操作函数**</center>
+
+|         字典操作          |                             描述                             |
+| :-----------------------: | :----------------------------------------------------------: |
+|        dic.clear()        |                           清空字典                           |
+|        dic.copy()         |                           赋值字典                           |
+|   dic.get(k, [default])   |             获得键k对应的值，不存在则返回default             |
+|        dic.items()        |                   获得由键和值组成的迭代器                   |
+|        dic.keys()         |                        获得键的迭代器                        |
+|        dic.pop(k)         |                        删除k:v键值对                         |
+|     dic.update(adict)     |       从另一个字典更新成员（不存在就创建，存在就覆盖）       |
+|       dic.values()        |                        获得值的迭代器                        |
+| dic.fromkeys(iter, value) |        以列表或元祖中给定的键建立字典，默认值为value         |
+|       dic.popitem()       |                 从字典中删除一k:v项并返回它                  |
+| dic.setdefault(k,default) | 若字典中存在key值为k的，则返回其对应的值；否则在字典中建立一个k:default字典成员 |
+
+代码示例：
+
+```Python
+>>> dic = {'a':1, 'b':2}
+
+
+>>> type(dic)      #字典类型                     
+<class 'dict'>
+>>> dic.get('a')   #获得键a的值
+1
+>>> dic.get('j')   #键不存在返回默认值
+>>> dic['j']       #直接以键获取值，不存在抛出异常
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    dic['j']
+KeyError: 'j'
+
+
+>>> dic.items()      #取得所有的键值对
+dict_items([('a', 1), ('b', 2)])
+>>> dic.keys()       #返回字典所有的键
+dict_keys(['a', 'b'])
+
+
+>>> dic.values()     #返回字典所有的值
+dict_values([1, 2])
+>>> dic.update({'a':3})  #用另一个字典（存在键）取更新dic字典
+>>> dic
+{'a': 3, 'b': 2}
+
+
+>>> dic.update({'c':3})   #用另一个字典（不存在键）取更新dic字典
+>>> dic
+{'a': 3, 'b': 2, 'c': 3}
+
+
+>>> dic.setdefault('a')   #存在键就返回值
+3
+
+
+>>> dic.setdefault('d',0) #不存在键就新建一个键值对
+0
+
+
+>>> dic
+{'a': 3, 'b': 2, 'c': 3, 'd': 0}
+
+
+>>> dic.pop('d')    #删除d并返回值
+0
+>>> dic
+{'a': 3, 'b': 2, 'c': 3}
+>>> dic.popitem()   #删除任意一项键值对并返回它
+('c', 3)
+
+
+>>> dic
+{'a': 3, 'b': 2}
+>>> dic.pop('d')   #删除不存在的键值对引发异常
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    dic.pop('d')
+KeyError: 'd'
 ```
 
