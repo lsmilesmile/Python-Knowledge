@@ -679,176 +679,562 @@ a
      
 
 - **lower()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：转换字符串中所有大写字符为小写。
+
+  2. 语法：**s.lower()**
+
+  3. 参数：\
+
+  4. 返回值：返回将字符串中所有大写字符转换为小写后生成的字符串。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hELlo'
+     
+     >>> s.lower()
+     'hello'
+     ```
 
 - **upper()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：将字符串中所有小写字母转换为大写字母。
+
+  2. 语法：**s.upper()**
+
+  3. 参数：\
+
+  4. 返回值：返回小写字母转换为大写字母的字符串。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hELlo'
+     
+     >>> s.upper()
+     'HELLO'
+     ```
 
 - **capitalize()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：将字符串的第一个字母变成大写，其他字母变小写。
+
+  2. 语法：**s.capitalize()**
+
+  3. 参数：\
+
+  4. 返回值：返回一个首字母大写的字符串。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hELlo'
+     
+     >>> s.capitalize()
+     'Hello'
+     ```
 
 - **title()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：返回“标题化”的字符串，就是说所有单词都是以大写开始的，其余字母均为小写。
+
+  2. 语法：**s.title()**
+
+  3. 参数：\
+
+  4. 返回值：返回"标题化"的字符串，就是说所有单词都是以大写开始。 
+
   5. 代码示例
+
+     ```Python
+     >>> s = "this is string example from runoob....wow!!!"
+     
+     >>> s.title()
+     'This Is String Example From Runoob....Wow!!!'
+     ```
 
 - **swapcase()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：对字符串的大小写字母进行转换。 
+
+  2. 语法：**s.swapcase()**
+
+  3. 参数：\
+
+  4. 返回值：返回大小写字母转换后生成的新字符串。
+
   5. 代码示例
+
+     ```Python
+     >>> s = 'HellO'
+     
+     >>> s.swapcase()
+     'hELLo'
+     ```
 
 - **replace()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：用于把字符串中指定的旧子字符串替换成指定的新子字符串，如果指定 count 可选参数则替换指定的次数，默认全部替换。 
+
+  2. 语法：**s.replace(old, new【,count=s.count(old)】)**
+
+  3. 参数：
+
+     - old - 指定的旧子字符串
+     - new - 指定的新子字符串
+     - count - 可选参数，替换的次数，默认为指定的旧子字符串在字符串中出现的总次数。
+
+  4. 返回值：返回把字符串中指定的旧子字符串替换成指定的新子字符串后生成的新字符串，如果指定 count 可选参数则替换指定的次数，默认为指定的旧子字符串在字符串中出现的总次数。 
+
   5. 代码示例
+
+     ```Python
+     >>> s = 'i do not like he,but he is good'
+     
+     >>> s.replace('he', 'she')
+     'i do not like she,but she is good'
+     
+     >>> s.replace('he', 'she', 1)
+     'i do not like she,but he is good'
+     ```
 
 - **maketrans()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：用于给translate()方法创建字符映射转换表。可以只接受一个参数，此时这个参数是个字典类型。
+
+     对于接受两个参数的最简单的调用方式，第一个参数是字符串，表示需要转换的字符，第二个参数也是字符串，表示转换的目标。两个字符串的长度必须相同，为一一对应的关系。在Python3中可以有第三个参数，表示要删除的字符，也是字符串。一般 maketrans() 方法需要配合translate()方法一起使用。
+
+     **注：Python3.4 以后已经不需要从外部 string 模块中来调用 maketrans() 方法了，取而代之的是内建函数: bytearray.maketrans()、bytes.maketrans()、str.maketrans()。**
+
+  2. 语法：**s.maketrans(intab, outtab[,delchars])**
+
+  3. 参数：
+
+     - intab - 需要转换的字符组成的字符串。
+     - outtab - 转换的目标字符组成的字符串。
+     - delchars - 可选参数，表示要删除的字符组成的字符串。
+
+  4. 返回值：返回一个字符映射转换表供translate()方法调用。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hello,my name is felix,i love China'
+     >>> intab = 'emixo'
+     >>> outtab = '12345'
+     >>> deltab = 'fya'
+     
+     #创建字符映射表
+     >>> trantab1 = str.maketrans(intab, outtab)
+     #创建字符映射表并删除指定字符
+     >>> trantab2 = str.maketrans(intab, outtab, deltab)
+     
+     >>> print(s.translate(trantab1))
+     h1ll5,2y na21 3s f1l34,3 l5v1 Ch3na
+     
+     >>> print(s.translate(trantab2))
+     h1ll5,2 n21 3s 1l34,3 l5v1 Ch3n
+     
+     
+     ```
 
 - **translate()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+
+  **见maketrans()函数**
 
 - **strip()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：用于删除字符串头部和尾部指定的字符，默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  2. 语法：**s.strip([chars])**
+
+  3. 参数：
+
+     - chars - 可选参数，要删除的指定字符（串），默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  4. 返回值：返回删除字符串头部和尾部指定的字符后生成的新的字符串。 
+
   5. 代码示例
+
+     ```Python
+     >>> s = '   my name is felix  '
+     
+     >>> s.strip()
+     'my name is felix'
+     
+     #如果头尾不存在要删除的字符（串），则返回原字符（串）
+     >>> s.strip('m')
+     '   my name is felix  '
+     >>> s.strip('m') == s
+     True
+     
+     #删除指定字符（串）
+     >>> s = 'my name is felm'
+     >>> s.strip('m')
+     'y name is fel'
+     ```
+
+     
 
 - **rstrip()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：删除字符串尾部指定的字符，默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  2. 语法：**s.rstrip([chars])**
+
+  3. 参数：
+
+     - chars - 可选参数，要删除的指定字符，默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  4. 返回值：返回删除字符串尾部指定的字符后生成的新的字符串。 
+
   5. 代码示例
+
+     ```Python
+     >>> s = 'my name is felix  '
+     
+     >>> s.rstrip()
+     'my name is felix'
+     
+     
+     >>> s = 'my name is felix'
+     >>> s.rstrip('x')
+     'my name is feli'
+     
+     #删除不存在的字符（串），返回原始字符串
+     >>> s.rstrip('k')
+     'my name is felix'
+     ```
 
 - **lstrip()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：删除字符串头部指定的字符，默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  2. 语法：**s.lstrip([chars])**
+
+  3. 参数：
+
+     - chars - 可选参数，要删除的指定字符，默认字符为所有空字符，包括空格、换行(\n)、制表符(\t)等。 
+
+  4. 返回值：返回删除字符串头部指定的字符后生成的新的字符串。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = '   my name is felix'
+     
+     >>> s.lstrip()
+     'my name is felix'
+     
+     >>> s = 'my name is felix'
+     >>> s.lstrip('m')
+     'y name is felix'
+     
+     #删除不存在的字符（串），返回原始字符串
+     >>> s.lstrip('k')
+     'my name is felix'
+     ```
 
 - **eval()**
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：执行一个字符串表达式，并返回表达式的值。 
 
-- **input()**
+  2. 语法：**eval(expression[, globasl[, locals]])**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值 
-  5. 代码示例
+  3. 参数：
+
+     - expression - 表达式。
+     - globals - 变量作用域，全局命名空间，如果被提供，则必须是一个字典对象。
+     - locals - 变量作用域，局部命名空间，如果被提供，可以是任何映射对象。
+
+  4. 返回值：返回表达式计算结果。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> x = 4
+     
+     >>> s = '3 * x'
+     >>> eval(s)
+     12
+     
+     >>> eval('pow(2, 2)')
+     4
+     ```
 
 - **in/not in**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：**in** - 如果在指定的序列中找到值返回 True，否则返回 False。**not in** - 如果在指定的序列中没有找到值返回 True，否则返回 False。 
+
+  2. 语法：**s in string/s not in string**
+
+  3. 参数：\
+
+  4. 返回值：True/False
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hello'
+     
+     >>> 'h' in s
+     True
+     >>> 'k' in s
+     False
+     ```
 
 - **startswith()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：判断字符串是否以指定前缀开头，如果是则返回 True，否则返回 False。 
+
+  2. 语法：**s.startswith(prefix[,start=0[,end=len(s)]])**
+
+  3. 参数：
+
+     - s - 父字符串。
+     - prefix - 指定前缀，该参数可以是一个字符串或者是一个元素。
+     - start - 可选参数，字符串中的开始位置索引，默认为0。（可单独指定）
+     - end - 可选参数，字符中结束位置索引，默认为字符串的长度。（不能单独指定）
+
+  4. 返回值：如果**字符串（包括字符）**以指定的前缀开头返回 True ，否则返回 False。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'my name is felix'
+     
+     >>> s.startswith('m')
+     True
+     >>> s.startswith('my')
+     True
+     >>> s.startswith('k')
+     False
+     >>> s.startswith('n', 3)
+     True
+     >>> s.startswith('n', 3, len(s))
+     True
+     ```
 
 - **endswith()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
+  1. 描述：判断字符串是否以指定后缀结尾，如果是则返回 True，否则返回 False。 
+
+  2. 语法：**s.endswith(suffix,[,start=0[,end=len(s)]])**
+
+  3. 参数：
+     - s - 父字符串。
+     - suffix - 指定后缀，该参数可以是一个字符串或者是一个元素。
+     - start - 可选参数，字符串中的开始位置索引，默认为0。（可单独指定）
+     - end - 可选参数，字符中结束位置索引，默认为字符串的长度。（不能单独指定）
+
+  4. 返回值：如果字符串以指定的后缀结尾返回 True ，否则返回 False。 
+
   5. 代码示例
+
+     ```Python
+     >>> s = 'my name is felix'
+     
+     
+     >>> s.endswith('x')
+     True
+     >>> s.endswith('ix')
+     True
+     
+     
+     >>> s.endswith('k')
+     False
+     >>> s.endswith('i', 3)
+     False
+     
+     #后面两个参数的范围是[3,6),即[3, 5],前包后不包
+     >>> s.endswith('e', 3, 6)
+     False
+     >>> s.endswith('m', 3, 6)
+     True
+     >>> s.startswith('n', 3, 6)
+     True
+     ```
 
 - **isalnum()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：测字符串是否由**字母或数字**组成。 
+
+  2. 语法：**s.isalnum()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串至少有一个字符并且所有字符都是字母或数字则返回 True,否则返回 False 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'ljld8686'
+     
+     >>> s.isalnum()
+     True
+     
+     #有点
+     >>> s = 'www.51jb.com'
+     >>> s.isalnum()
+     False
+     ```
 
 - **isalpha()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：检测字符串是否**只由字母或汉字**组成。 
+
+  2. 语法：**s.isalpha()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串至少有一个字符并且所有字符都是字母或汉字则返回 True,否则返回 False 。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'my name is 刘'
+     >>> s.isalpha()
+     False
+     
+     >>> s = 'mynameis刘'
+     >>> s.isalpha()
+     True
+     >>> 
+     ```
 
 - **isdigit()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：检测字符串是否**只由数字组成**。 
+
+  2. 语法：**s.isdigit()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串只包含数字则返回 True 否则返回 False。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = '3.1415926ppp'
+     >>> s.isdigit()
+     False
+     
+     >>> s = '3.1415926'
+     >>> s.isdigit()
+     False
+     
+     >>> s = '31415926'
+     >>> s.isdigit()
+     True
+     ```
 
 - **isspace()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：检测字符串是否**只由空格**组成。 
+
+  2. 语法：**s.isspace()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串中至少有一个字符，并且所有字符都是空格，则返回 True，否则返回 False。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'hello python'
+     >>> s.isspace()
+     False
+     
+     >>> s = '     '
+     >>> s.isspace()
+     True
+     ```
 
 - **isupper()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：检测**字符串中所有的字母**是否都为大写。 
+
+  2. 语法：**s.isupper()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串中包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是大写，则返回 True，否则返回 False 
+
+  5. 代码示例：
+
+     ```Python
+     #只有字母，全部小写
+     >>> s = 'hello'
+     >>> s.isupper()
+     False
+     
+     #只有字母，大小写都有
+     >>> s = 'HELLo'
+     >>> s.isupper()
+     False
+     
+     #只有字母，全部大写
+     >>> s = 'HELLO'
+     >>> s.isupper()
+     True
+     
+     #有字母、数字、符号，是字母的都是大写
+     >>> s = 'H453ELL098O...'
+     >>> s.isupper()
+     True
+     ```
+
+     
 
 - **islower()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值
-  5. 代码示例
+  1. 描述：检测**字符串中所有的字母**是否都为小写。 
+
+  2. 语法：**s.islower()**
+
+  3. 参数：\
+
+  4. 返回值：如果字符串中包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是小写，则返回 True，否则返回 False 。
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'HELLO'
+     >>> s.islower()
+     False
+     
+     >>> s = 'HELlo'
+     >>> s.islower()
+     False
+     
+     >>> s = 'hello'
+     >>> s.islower()
+     True
+     
+     >>> s = 'www.baidu.com/123'
+     >>> s.islower()
+     True
+     ```
 
 - **zfill()**
 
-  1. 描述
-  2. 语法
-  3. 参数
-  4. 返回值 
-  5. 代码示例
+  1. 描述：返回指定长度的字符串，原字符串右对齐，前面填充0。 
+
+  2. 语法：**s.zfill(width)**
+
+  3. 参数：
+
+     -  width - 指定字符串的长度。原字符串右对齐，前面填充0。
+
+  4. 返回值 ：返回指定长度的字符串。 
+
+  5. 代码示例：
+
+     ```Python
+     >>> s = 'qwertyuiop'
+     >>> s.zfill(10)
+     'qwertyuiop'
+     
+     #长度小于原始字符串则返回原始字符串
+     >>> s.zfill(5)
+     'qwertyuiop'
+     
+     >>> s.zfill(11)
+     '0qwertyuiop'
+     
+     >>> s.zfill(20)
+     '0000000000qwertyuiop'
+     ```
 
 #### 1.1.6中文字符串处理
 
