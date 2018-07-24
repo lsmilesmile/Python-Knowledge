@@ -7,3 +7,5 @@
 ## [Knowledge03 - Python数据类型](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
 
 ## [Knowledge04 - Python控制语句](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/Python%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5.md)
+
+## [knowledge05 - 函数](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E5%87%BD%E6%95%B0.md)
