@@ -9,3 +9,7 @@
 ## [Knowledge04 - Python控制语句](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/Python%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5.md)
 
 ## [knowledge05 - 函数](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E5%87%BD%E6%95%B0.md)
+
+## [Knowledge06 - 类](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E7%B1%BB6.md)
+
+## [Knowledge07 - 异常](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E5%BC%82%E5%B8%B87.md)
