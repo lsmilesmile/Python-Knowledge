@@ -81,6 +81,49 @@ print('hello', \
      name)
 ```
 
+### 1.4 标识符
+
+```Python
+1.什么是标识符?
+就是一堆字符串
+2.规则:
+  	a.只能有数字,字母,下划线组成
+    b.不能以数字开始
+    c.python的关键字不能做标志符
+    `关键字:
+      ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+     d. 严格区分大小写
+     e. 见名之意
+     f. 遵循驼峰原则: UserName  userName   user_name
+      
+例子:
+  ___ y 
+  __defx
+  abcd1234
+  1234abcd   x
+  abcd$%^&*&^%$#     x
+  False
+  
+  
+ 3.作用
+	变量,函数来进行命名的
+```
+
+### 1.5 变量
+
+```Python
+变量: 在程序执行过程中,其值是可以发生改变的量就是变量. 
+作用: 将不同的数据类型存到内存中
+删除变量:  del   变量名
+```
+
+### 1.6 常量
+
+```
+常量: 程序在运行过程值,其值是不可改变的量就是常量
+命名规则: 常量一般使用大写
+```
+
 
 
 ## 2 - Python 输入/输出
