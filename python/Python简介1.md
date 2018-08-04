@@ -58,7 +58,7 @@ python有两个版本:  python2.x  和python3.x
 
 - 首先进入Pytho[官网](https://www.python.org/)
 
-  ![](.\images\1-1.png)
+  ![](Python Knowledge\python\images\1-1.png)
 
 - 到页面底部点击Download
 
