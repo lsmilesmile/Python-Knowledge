@@ -1,13 +1,11 @@
 # Python控制语句
 
-Python中的控制流程语句：
+导航栏
 
-- 选择结构（if）
-- for循环；
-- for与range()；
-- while()循环；
-- 增量赋值运算符；
-- 推导式
+> - if
+> - for
+> - while
+> - 推导或内涵
 
 
 

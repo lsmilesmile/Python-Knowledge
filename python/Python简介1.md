@@ -1,5 +1,15 @@
 # Python简介
 
+导航栏
+
+> - Python的特点
+> - Python的作用
+> - 环境搭建
+> - 编辑器
+> - 计算机相关知识
+
+
+
 ## 1 - Python的特点
 
 - **Python是免费的自由的软件**
@@ -62,25 +72,25 @@ python有两个版本:  python2.x  和python3.x
 
 - 到页面底部点击Download
 
-  ![](.\images\1-2.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-2.png)
 
 - 这里有许多版本，找到想要的版本点击Download
 
-  ![](.\images\1-3.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-3.png)
 
 - 下载后可以看到安装程序，点击安装
 
-  ![](.\images\1-5.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-5.png)
 
 - 安装过程
 
-  ![](.\images\1-6.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-6.png)
 
-  ![1-7](.\images\1-7.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-7.png)
 
   点击next后选择安装位置
 
-  ![](.\images\1-8.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-8.png)
 
   点击install等待安装完成
 
@@ -88,11 +98,11 @@ python有两个版本:  python2.x  和python3.x
 
   在命令行下输入如下：
 
-  ![](.\images\1-9.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-9.png)
 
 - 启动Python并运行一行代码
 
-  ![](.\images\1-10.png)
+  ![](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/images/1-10.png)
 
 ### 3.2 linux上安装Python
 
