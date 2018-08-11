@@ -17,3 +17,8 @@
 ## [Konwledge08 - 文件](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E6%96%87%E4%BB%B68.md)
 
 ## [Knowledge09 - 正则表达式](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F9.md)
+
+## [Knowledge10 - 坦克大战部分](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/pygame-%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E9%83%A8%E5%88%8610.md)
+
+## [Knowledge11 - 时间日期和模块](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9F%E5%92%8C%E6%A8%A1%E5%9D%9711.md)
+
