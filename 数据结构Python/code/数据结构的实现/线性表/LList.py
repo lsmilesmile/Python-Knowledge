@@ -169,6 +169,17 @@ class LList(object):
             func(p.elem)
             p = p.next
 
+    def rev(self):
+        p = None
+        while self._head is not None:
+            q = self._head
+            self._head = q.next  # 摘下原来的首结点
+            q.next = p
+            p = q  # 将刚摘下的结点加入p引用的结点序列
+        self._head = p  # 反转后的结点序列已经做好，重置表头链接
+    
+
+
     def test1(self, value):
         print(value * 2, end=',')
 
@@ -193,6 +204,7 @@ if __name__ == '__main__':
     # 求表的长度
     print(a_List.length())
 
+
     # 打印出单链表a_List的元素
     print(a_List.for_each(a_List.test1))
 
@@ -201,6 +213,10 @@ if __name__ == '__main__':
 
     # 打印出单链表a_List的元素
     # a_List.show_all()
+    a_List.showall()
+
+    # 反转
+    a_List.rev()
     a_List.showall()
 
     # 删除第1个结点
@@ -225,6 +241,7 @@ if __name__ == '__main__':
 
     # 把3查到4前面
     a_List.insert_value(3, 4)
+
     a_List.show_all()
 
     # 筛选生成器(用生成器对象.__next__()  或  next(生成器对象))来输出生成器中的元素
@@ -240,3 +257,4 @@ if __name__ == '__main__':
 
     # 判断表是否是空表
     print(a_List.is_empty())
+    
