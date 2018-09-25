@@ -33,3 +33,17 @@
 ## [抽象数据类型](https://github.com/lsmilesmile/Python-Knowledge/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84Python/%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B2.md)
 
 ## [线性表](https://github.com/lsmilesmile/Python-Knowledge/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84Python/%E7%BA%BF%E6%80%A7%E8%A1%A83.md)
+
+------
+
+# [PIL库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/PIL)
+
+## [image模块](https://github.com/lsmilesmile/Python-Knowledge/blob/master/PIL/image_module.py)
+
+------
+
+
+
+# [爬虫](https://github.com/lsmilesmile/Python-Knowledge/tree/master/reptile)
+
+## [基本库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/reptile/code1/chapter03)
