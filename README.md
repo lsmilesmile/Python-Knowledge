@@ -40,7 +40,7 @@
 
 # [PIL库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/PIL)
 
-## [image模块](https://github.com/lsmilesmile/Python-Knowledge/blob/master/PIL/image_module.py)
+## [image模块](https://github.com/lsmilesmile/Python-Knowledge/blob/master/PIL/code/image_module.py)
 
 ------
 
