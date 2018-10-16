@@ -46,6 +46,10 @@
 
 
 
-# [爬虫](https://github.com/lsmilesmile/Python-Knowledge/tree/master/reptile)
+# [爬虫](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider)
 
-## [基本库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/reptile/code1/chapter03)
+## [请求库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter03)
+
+## [解析库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter04)
+
+## [数据存储](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter05)
