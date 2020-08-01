@@ -1,3 +1,0 @@
-命令行查看MongoDB中的数据库：进入MongoDB安装的bin目录
-执行命令：mongo -> 进入交互式环境
-执行命令: show dbs -> 查看所有数据库
