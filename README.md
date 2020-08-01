@@ -1,6 +1,6 @@
 # [Python](https://github.com/lsmilesmile/Python-Knowledge/tree/master/python)
 
-## [Python简介](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/Python%E7%AE%80%E4%BB%8B1.md)
+## [Python简介](<https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/Python%E4%B9%8B%E7%AE%80%E4%BB%8B1.md>)
 
 ## [Python语法基础](https://github.com/lsmilesmile/Python-Knowledge/blob/master/python/Python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%802.md)
 
@@ -36,20 +36,4 @@
 
 ## [线性表](https://github.com/lsmilesmile/Python-Knowledge/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84Python/%E7%BA%BF%E6%80%A7%E8%A1%A83.md)
 
-------
-
-# [PIL库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/PIL)
-
-## [image模块](https://github.com/lsmilesmile/Python-Knowledge/blob/master/PIL/code/image_module.py)
-
-------
-
-
-
-# [爬虫](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider)
-
-## [请求库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter03)
-
-## [解析库](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter04)
-
-## [数据存储](https://github.com/lsmilesmile/Python-Knowledge/tree/master/spider/code1/chapter05)
+## 
